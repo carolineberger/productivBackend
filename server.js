@@ -19,7 +19,7 @@ routes(app);
 
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/activity' || 'mongodb://test_user:testuser1@ds161710.mlab.com:61710/productiv_activities', function (err, client) {
+mongoose.connect('mongodb://test_user:testuser1@ds161710.mlab.com:61710/productiv_activities', function (err, client) {
   if (err) {
     console.log(err);
     process.exit(1);
